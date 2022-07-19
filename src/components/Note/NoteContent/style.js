@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     // backgroundColor: '#ff8800',
-    flex: 1,
+    height: hp(26),
     width: wp(90),
   },
   title: {
@@ -34,8 +34,9 @@ const styles = StyleSheet.create({
     color: '#3D3D4E',
   },
   addIcon: {
-    marginBottom: hp(5),
-    marginLeft: wp(65),
+    position: 'absolute',
+    top: hp(78),
+    left: wp(76),
   },
 });
 

@@ -3,7 +3,11 @@ import React from 'react';
 
 import styles from './style';
 
-import AddIcon from '../../../assets/icons/AddIcon';
+//components
+import NoteBody from '../NoteBody/NoteBody';
+
+//icons
+import AddIcon from '../../../../assets/icons/AddIcon';
 
 const NoteContent = props => {
   return (
@@ -13,12 +17,16 @@ const NoteContent = props => {
         <Text style={styles.text}>What made you laugh today?</Text>
       </View>
 
-      <TouchableOpacity
-        activeOpacity={0.5}
-        style={styles.addIcon}
-        onPress={props.addNote}>
-        <AddIcon inColor="#F4A600" outColor="#F4A600" />
-      </TouchableOpacity>
+      <NoteBody />
+
+      {props.showIcon && (
+        <TouchableOpacity
+          activeOpacity={0.5}
+          style={styles.addIcon}
+          onPress={props.addNote}>
+          <AddIcon inColor="#F4A600" outColor="#F4A600" />
+        </TouchableOpacity>
+      )}
     </View>
   );
 };

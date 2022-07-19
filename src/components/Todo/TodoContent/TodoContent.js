@@ -3,9 +3,13 @@ import React from 'react';
 
 import styles from './style';
 
-import AddIcon from '../../../assets/icons/AddIcon';
+//components
+import TodoBody from '../TodoBody/TodoBody';
 
-const TodoContent = () => {
+//icons
+import AddIcon from '../../../../assets/icons/AddIcon';
+
+const TodoContent = props => {
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
@@ -15,9 +19,16 @@ const TodoContent = () => {
         </View>
       </View>
 
-      <TouchableOpacity activeOpacity={0.5} style={styles.addIcon}>
-        <AddIcon inColor="#3F51B5" outColor="#3F51B5" />
-      </TouchableOpacity>
+      <TodoBody />
+
+      {props.showIcon && (
+        <TouchableOpacity
+          activeOpacity={0.5}
+          style={styles.addIcon}
+          onPress={props.addTodo}>
+          <AddIcon inColor="#3F51B5" outColor="#3F51B5" />
+        </TouchableOpacity>
+      )}
     </View>
   );
 };

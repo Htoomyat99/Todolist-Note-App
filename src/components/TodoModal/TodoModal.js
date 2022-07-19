@@ -6,7 +6,7 @@ import styles from './style';
 //icons
 import CancelIcon from '../../../assets/icons/CancelIcon';
 
-const UpdateModal = props => {
+const TodoModal = props => {
   return (
     <View style={styles.container}>
       <View style={styles.modalContainer}>
@@ -16,25 +16,18 @@ const UpdateModal = props => {
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.titleInput}
-            placeholder="Title"
+            placeholder="Todo..."
             textContentType="name"
             value={props.title}
             onChangeText={props.onChangeTitle}
           />
-          <TextInput
-            style={styles.input}
-            placeholder="Write..."
-            numberOfLines={10}
-            value={props.para}
-            onChangeText={props.onChangePara}
-          />
         </View>
-        <TouchableOpacity style={styles.btnContent} onPress={props.addNote}>
-          <Text style={styles.btn}>Add Note</Text>
+        <TouchableOpacity style={styles.btnContent} onPress={props.addTodo}>
+          <Text style={styles.btn}>Add Todo</Text>
         </TouchableOpacity>
       </View>
     </View>
   );
 };
 
-export default UpdateModal;
+export default TodoModal;

@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     // backgroundColor: '#ff8800',
-    flex: 1,
-    width: wp(90),
+    height: hp(23),
+    width: wp(85),
   },
   title: {
     // backgroundColor: 'pink',
