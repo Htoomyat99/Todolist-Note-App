@@ -19,16 +19,24 @@ const styles = StyleSheet.create({
     borderRadius: wp(3),
     marginBottom: hp(15),
   },
+  titleContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: wp(3),
+  },
   cancel: {
-    width: wp(5),
-    height: wp(5),
-    alignSelf: 'flex-end',
-    margin: wp(4),
+    width: wp(6),
+    height: wp(6),
+    marginRight: wp(3),
   },
   titleInput: {
     width: wp(70),
     alignSelf: 'center',
-    paddingLeft: wp(2),
+    paddingLeft: wp(3),
+    marginTop: hp(1),
+    borderWidth: wp(0.5),
+    borderColor: '#ddd',
   },
   input: {
     width: wp(70),
@@ -40,9 +48,9 @@ const styles = StyleSheet.create({
     paddingLeft: wp(2),
   },
   btnContent: {
-    backgroundColor: '#F4A600',
-    marginTop: hp(5),
-    marginBottom: hp(2),
+    backgroundColor: '#3F51B5',
+    marginTop: hp(3),
+    marginBottom: hp(3),
     marginHorizontal: hp(13),
     padding: wp(2),
     borderRadius: wp(0.7),
@@ -50,6 +58,9 @@ const styles = StyleSheet.create({
   btn: {
     color: '#fff',
     alignSelf: 'center',
+  },
+  remider: {
+    marginLeft: wp(6),
   },
 });
 

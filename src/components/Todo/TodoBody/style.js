@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#90CAF9',
     width: wp(85),
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    // justifyContent: 'space-between',
     alignItems: 'center',
     borderRadius: wp(1.8),
     marginBottom: hp(1),
@@ -31,9 +31,11 @@ const styles = StyleSheet.create({
     paddingVertical: wp(3),
     marginLeft: wp(5),
     color: '#3D3D4E',
+    fontWeight: 'bold',
   },
-  icon: {
-    marginRight: wp(3),
+  date: {
+    marginLeft: wp(5),
+    paddingVertical: wp(2),
   },
 });
 

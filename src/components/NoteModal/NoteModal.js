@@ -1,5 +1,6 @@
 import {View, Text, TextInput, TouchableOpacity} from 'react-native';
 import React from 'react';
+import DatePicker from 'react-native-date-picker';
 
 import styles from './style';
 
@@ -10,6 +11,7 @@ const UpdateModal = props => {
   return (
     <View style={styles.container}>
       <View style={styles.modalContainer}>
+        <DatePicker modal date={props.date} />
         <TouchableOpacity style={styles.cancel} onPress={props.cancel}>
           <CancelIcon />
         </TouchableOpacity>

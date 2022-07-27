@@ -10,6 +10,7 @@ import * as actionTodo from '../../../store/action/Todo';
 //Icons
 import DeleteIcon from '../../../../assets/icons/DeleteIcon';
 import TodoIcon from '../../../../assets/icons/TodoIcon';
+import {widthPercentageToDP} from 'react-native-responsive-screen';
 
 const NoteBody = () => {
   const todoResult = useSelector(state => state.todoList.todo);
@@ -29,17 +30,14 @@ const NoteBody = () => {
       keyExtractor={item => item.id}
       renderItem={({item}) => (
         <View style={styles.container}>
-          <View>
+          <View style={{width: widthPercentageToDP(76)}}>
             <Text style={styles.title}>{item.title}</Text>
+            <Text style={styles.date}>{item.date}</Text>
           </View>
-          <TouchableOpacity onPress={() => deleteHandler(item)}>
-            <DeleteIcon
-              width={23}
-              height={23}
-              inColor="#000"
-              outColor="#000"
-              style={styles.icon}
-            />
+          <TouchableOpacity
+            onPress={() => deleteHandler(item)}
+            style={styles.iconBox}>
+            <DeleteIcon width={23} height={23} inColor="#000" outColor="#000" />
           </TouchableOpacity>
         </View>
       )}

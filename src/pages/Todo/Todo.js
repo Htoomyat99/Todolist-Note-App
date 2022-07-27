@@ -11,12 +11,20 @@ const Todo = () => {
   const [showTodoModal, setTodoShowModal] = useState(false);
   const [showIcon, setShowIcon] = useState(true);
   const [title, setTitle] = useState('');
+  const [date, setDate] = useState(new Date());
+  const [open, setOpen] = useState(false);
 
   const dispatch = useDispatch();
+
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const day = date.getDate();
+  const dateString = `${day}-${month}-${year}`;
 
   let TodoData = {
     id: 1,
     title: title,
+    date: dateString,
   };
 
   const addHandler = () => {
@@ -34,6 +42,7 @@ const Todo = () => {
       setShowIcon(true);
       setTodoShowModal(false);
       dispatch(actionTodo.createTodo(TodoData));
+      setTitle('');
     } else {
       ToastAndroid.show('Please fill the input fields', ToastAndroid.SHORT);
     }
@@ -48,6 +57,16 @@ const Todo = () => {
           title={title}
           onChangeTitle={value => setTitle(value)}
           addTodo={addTodoHandler}
+          open={open}
+          date={date}
+          onConfirm={date => {
+            setOpen(false);
+            setDate(date);
+          }}
+          onCancel={() => {
+            setOpen(false);
+          }}
+          remider={() => setOpen(true)}
         />
       )}
     </View>

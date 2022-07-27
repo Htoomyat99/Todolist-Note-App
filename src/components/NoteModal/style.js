@@ -23,12 +23,15 @@ const styles = StyleSheet.create({
     width: wp(5),
     height: wp(5),
     alignSelf: 'flex-end',
-    margin: wp(4),
+    margin: wp(6),
   },
   titleInput: {
     width: wp(70),
     alignSelf: 'center',
+    marginTop: hp(2),
     paddingLeft: wp(2),
+    borderWidth: wp(0.5),
+    borderColor: '#ddd',
   },
   input: {
     width: wp(70),
@@ -41,7 +44,7 @@ const styles = StyleSheet.create({
   },
   btnContent: {
     backgroundColor: '#F4A600',
-    marginTop: hp(7),
+    marginTop: hp(5),
     marginBottom: hp(2),
     marginHorizontal: hp(13),
     padding: wp(2),

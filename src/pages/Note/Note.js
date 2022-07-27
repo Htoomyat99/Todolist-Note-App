@@ -12,14 +12,22 @@ const Note = () => {
   const [showIcon, setShowIcon] = useState(true);
   const [title, setTitle] = useState('');
   const [para, setPara] = useState('');
+  const [date, setDate] = useState(new Date());
 
   const dispatch = useDispatch();
+
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const day = date.getDate();
+  const dateString = `${day}-${month}-${year}`;
 
   let NoteData = {
     id: 1,
     title: title,
     para: para,
+    date: dateString,
   };
+
   const addHandler = () => {
     setNoteShowModal(true);
     setShowIcon(false);
@@ -34,6 +42,8 @@ const Note = () => {
     if (NoteData.title && NoteData.para) {
       setShowIcon(true);
       setNoteShowModal(false);
+      setTitle('');
+      setPara('');
       dispatch(actionText.createText(NoteData));
     } else {
       ToastAndroid.show('Please fill the input fields', ToastAndroid.SHORT);
@@ -51,6 +61,7 @@ const Note = () => {
           para={para}
           onChangePara={value => setPara(value)}
           addNote={addNoteHandler}
+          date={date}
         />
       )}
     </View>

@@ -1,18 +1,32 @@
 import {View, Text, TextInput, TouchableOpacity} from 'react-native';
 import React from 'react';
+import DatePicker from 'react-native-date-picker';
 
 import styles from './style';
 
 //icons
 import CancelIcon from '../../../assets/icons/CancelIcon';
+import CalendarIcon from '../../../assets/icons/CalendarIcon';
 
 const TodoModal = props => {
   return (
     <View style={styles.container}>
       <View style={styles.modalContainer}>
-        <TouchableOpacity style={styles.cancel} onPress={props.cancel}>
-          <CancelIcon />
-        </TouchableOpacity>
+        <View style={styles.titleContainer}>
+          <TouchableOpacity onPress={props.remider}>
+            <CalendarIcon style={styles.remider} />
+          </TouchableOpacity>
+          <DatePicker
+            modal
+            open={props.open}
+            date={props.date}
+            onConfirm={props.onConfirm}
+            onCancel={props.onCancel}
+          />
+          <TouchableOpacity style={styles.cancel} onPress={props.cancel}>
+            <CancelIcon />
+          </TouchableOpacity>
+        </View>
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.titleInput}

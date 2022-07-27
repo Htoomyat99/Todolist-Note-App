@@ -14,6 +14,7 @@ export default (state = initialstate, action) => {
           id: state.text.length + 1,
           title: newData.title,
           para: newData.para,
+          date: newData.date,
         };
         updateNote = [...state.text, newNote];
       } else {

@@ -13,6 +13,7 @@ export default (state = initialstate, action) => {
         const newTodo = {
           id: state.todo.length + 1,
           title: newData.title,
+          date: newData.date,
         };
         updateTodo = [...state.todo, newTodo];
       } else {
