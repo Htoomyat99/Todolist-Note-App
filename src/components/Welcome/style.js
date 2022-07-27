@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     marginTop: hp(2),
     lineHeight: hp(7.5),
     color: '#3D3D4E',
-    fontFamily: 'Courgette-Regular.ttf',
   },
   simp: {
     color: '#F4A600',

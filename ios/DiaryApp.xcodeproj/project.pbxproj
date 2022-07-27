@@ -17,6 +17,7 @@
 		0D0D4AB4FE824A47845C90FC /* RobotoSlab-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A178FD30E14438C9516BF19 /* RobotoSlab-ExtraLight.ttf */; };
 		B2E88493576E48C0A777366E /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B2423A8B1EC4E329DF43F1A /* RobotoSlab-Light.ttf */; };
 		C74F323AF5D44D388E198077 /* Courgette-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6F1DA518ACF4930B30E574C /* Courgette-Regular.ttf */; };
+		14E46B88384945739B8FDD28 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BDF0C9DFE98430582EE24F3 /* IndieFlower-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		7A178FD30E14438C9516BF19 /* RobotoSlab-ExtraLight.ttf */ = {isa = PBXFileReference; name = "RobotoSlab-ExtraLight.ttf"; path = "../assets/fonts/RobotoSlab-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		1B2423A8B1EC4E329DF43F1A /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; name = "RobotoSlab-Light.ttf"; path = "../assets/fonts/RobotoSlab-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		D6F1DA518ACF4930B30E574C /* Courgette-Regular.ttf */ = {isa = PBXFileReference; name = "Courgette-Regular.ttf"; path = "../assets/fonts/Courgette-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2BDF0C9DFE98430582EE24F3 /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; name = "IndieFlower-Regular.ttf"; path = "../assets/fonts/IndieFlower-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				7A178FD30E14438C9516BF19 /* RobotoSlab-ExtraLight.ttf */,
 				1B2423A8B1EC4E329DF43F1A /* RobotoSlab-Light.ttf */,
 				D6F1DA518ACF4930B30E574C /* Courgette-Regular.ttf */,
+				2BDF0C9DFE98430582EE24F3 /* IndieFlower-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				0D0D4AB4FE824A47845C90FC /* RobotoSlab-ExtraLight.ttf in Resources */,
 				B2E88493576E48C0A777366E /* RobotoSlab-Light.ttf in Resources */,
 				C74F323AF5D44D388E198077 /* Courgette-Regular.ttf in Resources */,
+				14E46B88384945739B8FDD28 /* IndieFlower-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
